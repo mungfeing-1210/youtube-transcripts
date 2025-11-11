@@ -7,6 +7,11 @@ baseurl: /youtube-transcripts
 # 主题设置
 theme: minima
 
+# Minima 主题配置
+minima:
+  # 隐藏顶部导航栏中的页面链接
+  header_pages: []
+
 # 插件
 plugins:
   - jekyll-feed
