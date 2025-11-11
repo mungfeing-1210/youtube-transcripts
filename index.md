@@ -31,12 +31,10 @@ https://mungfeing-1210.github.io/youtube-transcripts/feed.xml
 
 ## 📖 最新文稿
 
-{% assign all_files = site.static_files | where_exp: "file", "file.path contains '.md'" | where_exp: "file", "file.path contains '/2025'" | sort: 'modified_time' | reverse %}
+{% assign all_pages = site.html_pages | where_exp: "page", "page.path contains '/2025'" | where_exp: "page", "page.name != 'index.md'" | where_exp: "page", "page.title != nil" | sort: 'date' | reverse %}
 
-{% for file in all_files limit:20 %}
-  {% if file.basename != 'index' %}
-- [{{ file.basename }}]({{ file.path | replace: '.md', '.html' }})
-  {% endif %}
+{% for page in all_pages limit:20 %}
+- [{{ page.title }}]({{ page.url }}) - {{ page.channel }}
 {% endfor %}
 
 ## 🤖 关于
