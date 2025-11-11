@@ -2,7 +2,7 @@
 layout: default
 title: "Chris Sacca - Drifting Back to Real - Legendary Returns, Risk, Climate, Storytelling, Authenticity"
 channel: "Dialectic Podcast with Jackson Dahl"
-date: 2025-11-05
+date: 2024-11-05
 ---
 
 # Chris Sacca - Drifting Back to Real - Legendary Returns, Risk, Climate, Storytelling, Authenticity

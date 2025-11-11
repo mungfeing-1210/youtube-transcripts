@@ -2,7 +2,7 @@
 layout: default
 title: "7 Counterintuitive Product Lessons from WhatsApp's Former Head of Product | Ami Vora"
 channel: "Peter Yang"
-date: 2025-11-09
+date: 2024-11-09
 ---
 
 # 7 Counterintuitive Product Lessons from WhatsApp's Former Head of Product | Ami Vora

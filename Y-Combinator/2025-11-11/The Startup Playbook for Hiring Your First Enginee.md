@@ -2,7 +2,7 @@
 layout: default
 title: "The Startup Playbook for Hiring Your First Engineers and AEs"
 channel: "Y Combinator"
-date: 2025-11-07
+date: 2024-11-07
 ---
 
 # The Startup Playbook for Hiring Your First Engineers and AEs

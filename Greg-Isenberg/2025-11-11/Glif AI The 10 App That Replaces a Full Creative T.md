@@ -2,7 +2,7 @@
 layout: default
 title: "Glif AI: The $10 App That Replaces a Full Creative Team"
 channel: "Greg Isenberg"
-date: 2025-11-10
+date: 2024-11-10
 ---
 
 # Glif AI: The $10 App That Replaces a Full Creative Team

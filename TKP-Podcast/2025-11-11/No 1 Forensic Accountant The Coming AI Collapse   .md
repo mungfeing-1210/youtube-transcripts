@@ -2,7 +2,7 @@
 layout: default
 title: "No. 1 Forensic Accountant: The Coming AI Collapse  | Anthony Scilipoti"
 channel: "The Knowledge Project Podcast"
-date: 2025-10-28
+date: 2024-10-28
 ---
 
 # No. 1 Forensic Accountant: The Coming AI Collapse  | Anthony Scilipoti

@@ -2,7 +2,7 @@
 layout: default
 title: "Sarah Paine — How Russia sabotaged China's rise"
 channel: "Dwarkesh Patel"
-date: 2025-10-31
+date: 2024-10-31
 ---
 
 # Sarah Paine — How Russia sabotaged China's rise

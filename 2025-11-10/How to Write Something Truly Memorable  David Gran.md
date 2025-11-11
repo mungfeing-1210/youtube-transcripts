@@ -2,7 +2,7 @@
 layout: default
 title: "How to Write Something Truly Memorable — David Grann"
 channel: "David Perell"
-date: 2025-11-05
+date: 2024-11-05
 ---
 
 # How to Write Something Truly Memorable — David Grann

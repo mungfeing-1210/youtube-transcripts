@@ -2,7 +2,7 @@
 layout: default
 title: "What Jason Fried Learned from 26 Years of Building Great Products"
 channel: "Every"
-date: 2025-11-05
+date: 2024-11-05
 ---
 
 # What Jason Fried Learned from 26 Years of Building Great Products

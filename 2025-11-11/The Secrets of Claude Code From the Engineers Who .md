@@ -2,7 +2,7 @@
 layout: default
 title: "The Secrets of Claude Code From the Engineers Who Built It"
 channel: "Every"
-date: 2025-10-29
+date: 2024-10-29
 ---
 
 # The Secrets of Claude Code From the Engineers Who Built It
