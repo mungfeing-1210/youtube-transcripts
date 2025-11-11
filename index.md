@@ -31,7 +31,7 @@ https://mungfeing-1210.github.io/youtube-transcripts/feed.xml
 
 ## 📖 最新文稿
 
-{% assign all_pages = site.html_pages | where_exp: "page", "page.path contains '/2025'" | where_exp: "page", "page.name != 'index.md'" | where_exp: "page", "page.title != nil" | sort: 'date' | reverse %}
+{% assign all_pages = site.html_pages | where_exp: "page", "page.title != nil" | where_exp: "page", "page.channel != nil" | sort: 'date' | reverse %}
 
 {% for page in all_pages limit:20 %}
 - [{{ page.title }}]({{ page.url }}) - {{ page.channel }}
