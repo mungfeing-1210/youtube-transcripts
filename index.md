@@ -20,7 +20,7 @@
 在你的 RSS 阅读器中添加以下链接：
 
 ```
-https://USERNAME.github.io/REPO_NAME/feed.xml
+https://mungfeing-1210.github.io/youtube-transcripts/feed.xml
 ```
 
 推荐的 RSS 阅读器：
