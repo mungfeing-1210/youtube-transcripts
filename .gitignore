@@ -1,0 +1,24 @@
+# VTT 字幕文件
+*.vtt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# macOS
+.DS_Store
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp

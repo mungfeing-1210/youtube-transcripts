@@ -1,0 +1,40 @@
+title: YouTube 转录合集
+description: AI 自动转录的 YouTube 视频中文文稿
+author: AI Reader
+url: https://USERNAME.github.io
+baseurl: /REPO_NAME
+
+# 主题设置
+theme: minima
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 排除文件
+exclude:
+  - processed_videos.json
+  - "*.vtt"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# 永久链接设置
+permalink: /:categories/:year/:month/:day/:title/
+
+# Markdown 设置
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      comments: false
