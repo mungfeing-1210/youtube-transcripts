@@ -12,27 +12,21 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
 
-    {% assign all_posts = "" | split: "" %}
-    {% for channel_dir in site.static_files %}
-      {% if channel_dir.path contains "/2025" and channel_dir.path contains ".md" and channel_dir.path != "/index.md" %}
-        {% assign all_posts = all_posts | push: channel_dir %}
-      {% endif %}
-    {% endfor %}
+    {% assign sorted_pages = site.html_pages | where_exp: "page", "page.path contains '.md'" | where_exp: "page", "page.path contains '/2025'" | where_exp: "page", "page.name != 'index.md'" | sort: 'date' | reverse %}
 
-    {% assign sorted_posts = all_posts | sort: 'modified_time' | reverse %}
-
-    {% for post in sorted_posts limit:50 %}
-      {% if post.extname == ".md" and post.basename != "index" %}
+    {% for page in sorted_pages limit:50 %}
+      {% if page.title and page.channel %}
       <item>
-        <title>{{ post.basename | xml_escape }}</title>
-        <link>{{ site.url }}{{ site.baseurl }}{{ post.path | replace: '.md', '.html' }}</link>
-        <pubDate>{{ post.modified_time | date_to_rfc822 }}</pubDate>
-        <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.path | replace: '.md', '.html' }}</guid>
+        <title>{{ page.title | xml_escape }}</title>
+        <link>{{ site.url }}{{ site.baseurl }}{{ page.url }}</link>
+        <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
+        <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ page.url }}</guid>
         <description>
           <![CDATA[
-            来自频道的 YouTube 视频转录
+            来自 {{ page.channel }} 的 YouTube 视频转录
           ]]>
         </description>
+        <category>{{ page.channel }}</category>
       </item>
       {% endif %}
     {% endfor %}
