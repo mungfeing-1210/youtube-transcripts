@@ -1,8 +1,8 @@
 title: YouTube 转录合集
 description: AI 自动转录的 YouTube 视频中文文稿
 author: AI Reader
-url: https://USERNAME.github.io
-baseurl: /REPO_NAME
+url: https://mungfeing-1210.github.io
+baseurl: /youtube-transcripts
 
 # 主题设置
 theme: minima
