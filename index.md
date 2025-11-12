@@ -35,7 +35,7 @@ title: YouTube 转录合集
 <div style="padding: 1rem; margin-bottom: 0.8rem; border: 1px solid #e1e8ed; border-radius: 6px; background: white;">
   <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.3rem;">
     <h3 style="margin: 0; font-size: 1.1rem; font-weight: 500;">
-      <a href="{{ page.url }}" style="text-decoration: none; color: #1a1a1a;">{{ page.title }}</a>
+      <a href="{{ site.baseurl }}{{ page.url }}" style="text-decoration: none; color: #1a1a1a;">{{ page.title }}</a>
     </h3>
     <span style="font-size: 0.85rem; color: #999; white-space: nowrap; margin-left: 1rem;">{{ page.date | date: "%Y-%m-%d" }}</span>
   </div>
