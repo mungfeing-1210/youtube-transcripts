@@ -13,26 +13,26 @@ title: YouTube 转录合集
 <!-- 订阅频道筛选 -->
 <div style="margin: 1.5rem 0; padding: 1rem; background: #f7fafc; border-radius: 8px;">
   <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.6rem;">
-    <button style="padding: 0.5rem; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">全部</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Peter Yang</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Dwarkesh Patel</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Lenny's Podcast</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Data-Driven NYC</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Greg Isenberg</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Dialectic</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">David Perell</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">TKP Podcast</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Every</button>
-    <button style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Y Combinator</button>
+    <button class="channel-filter active" data-channel="all" style="padding: 0.5rem; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">全部</button>
+    <button class="channel-filter" data-channel="Peter Yang" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Peter Yang</button>
+    <button class="channel-filter" data-channel="Dwarkesh Patel" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Dwarkesh Patel</button>
+    <button class="channel-filter" data-channel="Lenny's Podcast" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Lenny's Podcast</button>
+    <button class="channel-filter" data-channel="The MAD Podcast with Matt Turck" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Data-Driven NYC</button>
+    <button class="channel-filter" data-channel="Greg Isenberg" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Greg Isenberg</button>
+    <button class="channel-filter" data-channel="Dialectic Podcast with Jackson Dahl" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Dialectic</button>
+    <button class="channel-filter" data-channel="David Perell" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">David Perell</button>
+    <button class="channel-filter" data-channel="The Knowledge Project Podcast" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">TKP Podcast</button>
+    <button class="channel-filter" data-channel="Every" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Every</button>
+    <button class="channel-filter" data-channel="Y Combinator" style="padding: 0.5rem; background: white; border: 1px solid #e1e8ed; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Y Combinator</button>
   </div>
 </div>
 
 <!-- 转录文章列表 -->
-<div style="margin: 2rem 0;">
+<div id="articles-list" style="margin: 2rem 0;">
 {% assign all_pages = site.html_pages | where_exp: "page", "page.title != nil" | where_exp: "page", "page.channel != nil" | sort: 'date' | reverse %}
 
 {% for page in all_pages limit:20 %}
-<div style="padding: 1rem; margin-bottom: 0.8rem; border: 1px solid #e1e8ed; border-radius: 6px; background: white;">
+<div class="article-card" data-channel="{{ page.channel }}" style="padding: 1rem; margin-bottom: 0.8rem; border: 1px solid #e1e8ed; border-radius: 6px; background: white;">
   <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.3rem;">
     <h3 style="margin: 0; font-size: 1.1rem; font-weight: 500;">
       <a href="{{ site.baseurl }}{{ page.url }}" style="text-decoration: none; color: #1a1a1a;">{{ page.title }}</a>
@@ -45,6 +45,44 @@ title: YouTube 转录合集
 </div>
 {% endfor %}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.channel-filter');
+  const articles = document.querySelectorAll('.article-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedChannel = this.getAttribute('data-channel');
+
+      // 更新按钮样式
+      filterButtons.forEach(btn => {
+        if (btn === this) {
+          btn.classList.add('active');
+          btn.style.background = '#667eea';
+          btn.style.color = 'white';
+          btn.style.border = 'none';
+        } else {
+          btn.classList.remove('active');
+          btn.style.background = 'white';
+          btn.style.color = '#1a1a1a';
+          btn.style.border = '1px solid #e1e8ed';
+        }
+      });
+
+      // 筛选文章
+      articles.forEach(article => {
+        const articleChannel = article.getAttribute('data-channel');
+        if (selectedChannel === 'all' || articleChannel === selectedChannel) {
+          article.style.display = 'block';
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
 
 <!-- 页脚 -->
 <div style="text-align: center; padding: 2rem 0; margin-top: 3rem; border-top: 1px solid #e1e8ed; color: #999; font-size: 0.85rem;">
