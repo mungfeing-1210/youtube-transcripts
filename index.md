@@ -4,180 +4,198 @@ title: YouTube 转录合集
 ---
 
 <style>
-/* Substack 风格优化 */
+/* Every 风格优化 - 现代编辑设计 */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
   color: #1a1a1a;
+  background: #ffffff;
 }
 
+/* Hero 区域 - 更大更突出 */
 .hero {
   text-align: center;
-  padding: 3rem 0 2rem;
-  max-width: 680px;
+  padding: 5rem 2rem 4rem;
+  max-width: 760px;
   margin: 0 auto;
+  background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%);
+  border-radius: 16px;
+  margin-bottom: 4rem;
 }
 
 .hero h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-  letter-spacing: -0.02em;
+  font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #0a0a0a;
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  color: #757575;
-  margin-bottom: 1.2rem;
+  font-size: 1.35rem;
+  color: #6b6b6b;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .rss-link {
   display: inline-block;
-  padding: 0.6rem 1.4rem;
-  background: transparent;
-  color: #667eea;
+  padding: 1rem 2.2rem;
+  background: #0a0a0a;
+  color: white;
   text-decoration: none;
-  border: 1.5px solid #667eea;
-  border-radius: 20px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .rss-link:hover {
-  background: #667eea;
-  color: white;
-  transform: translateY(-1px);
+  background: #2a2a2a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 频道筛选区 */
+/* 频道筛选区 - 更清晰的分区 */
 .channel-filters {
-  margin: 2rem 0;
-  padding: 1.2rem;
-  background: #fafafa;
-  border-radius: 12px;
+  margin: 4rem auto;
+  padding: 2.5rem 2rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+  max-width: 960px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .filters-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
 }
 
 .channel-filter {
-  padding: 0.65rem 1rem;
+  padding: 1rem 1.5rem;
   background: white;
-  color: #4a4a4a;
-  border: 1px solid #e0e0e0;
-  border-radius: 20px;
+  color: #2a2a2a;
+  border: 2px solid #e5e7eb;
+  border-radius: 30px;
   cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .channel-filter:hover {
-  border-color: #667eea;
-  color: #667eea;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+  border-color: #0a0a0a;
+  color: #0a0a0a;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .channel-filter.active {
-  background: #667eea;
+  background: #0a0a0a;
   color: white;
-  border-color: #667eea;
+  border-color: #0a0a0a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 文章列表 */
+/* 文章列表 - 更大的间距和层次 */
 #articles-list {
-  margin: 3rem 0;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5rem auto;
+  max-width: 820px;
+  padding: 0 2rem;
 }
 
 .article-card {
-  padding: 1.8rem 0;
+  padding: 3rem 2rem;
   margin-bottom: 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
   background: transparent;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .article-card:hover {
-  background: #fafafa;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  border-radius: 8px;
+  background: #fafbfc;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  border-radius: 12px;
   border-bottom-color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .article-title {
-  margin: 0 0 0.6rem 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: -0.01em;
+  margin: 0 0 1.2rem 0;
+  font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .article-title a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #0a0a0a;
   transition: color 0.2s ease;
 }
 
 .article-title a:hover {
-  color: #667eea;
+  color: #4a4a4a;
 }
 
 .article-meta {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  font-size: 0.9rem;
-  color: #757575;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #6b6b6b;
 }
 
 .article-channel {
-  font-weight: 500;
+  font-weight: 600;
+  color: #2a2a2a;
 }
 
 .article-date {
-  color: #999;
+  color: #9b9b9b;
+  font-weight: 400;
 }
 
 .article-divider {
-  color: #ddd;
+  color: #d0d0d0;
 }
 
-/* 页脚 */
+/* 页脚 - 更简洁 */
 .site-footer {
   text-align: center;
-  padding: 3rem 0 2rem;
-  margin-top: 4rem;
-  border-top: 1px solid #f0f0f0;
-  color: #999;
-  font-size: 0.9rem;
+  padding: 4rem 2rem 3rem;
+  margin-top: 6rem;
+  border-top: 2px solid #f0f0f0;
+  color: #9b9b9b;
+  font-size: 0.95rem;
 }
 
 .site-footer a {
-  color: #757575;
+  color: #6b6b6b;
   text-decoration: none;
   transition: color 0.2s ease;
+  font-weight: 500;
 }
 
 .site-footer a:hover {
-  color: #667eea;
+  color: #0a0a0a;
 }
 
 .footer-divider {
-  margin: 0 0.8rem;
-  color: #ddd;
+  margin: 0 1rem;
+  color: #d0d0d0;
 }
 </style>
 
