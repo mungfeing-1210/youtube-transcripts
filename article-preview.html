@@ -109,6 +109,19 @@ body {
   color: #1a1a1a;
 }
 
+/* 隐藏 markdown 中重复的标题和元信息 */
+.article-content > h1:first-child {
+  display: none;
+}
+
+.article-content > p:has(strong) {
+  display: none;
+}
+
+.article-content > hr:first-of-type {
+  display: none;
+}
+
 .article-content h2 {
   font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
   font-size: 1.8rem;
