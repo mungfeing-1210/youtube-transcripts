@@ -109,23 +109,6 @@ body {
   color: #1a1a1a;
 }
 
-/* 隐藏 markdown 中重复的标题和元信息 - 使用相邻选择器 */
-.article-content > h1:first-child {
-  display: none;
-}
-
-/* 隐藏 H1 后紧跟的段落（元信息） */
-.article-content > h1 + p,
-.article-content > h1 + p + p,
-.article-content > h1 + p + p + p {
-  display: none;
-}
-
-/* 隐藏 H1 后的第一条分隔线 */
-.article-content > h1 + p + p + p + hr {
-  display: none;
-}
-
 .article-content h2 {
   font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
   font-size: 1.8rem;
