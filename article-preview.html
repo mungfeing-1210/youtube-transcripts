@@ -114,7 +114,10 @@ body {
   display: none;
 }
 
-.article-content > p:has(strong) {
+/* 只隐藏前几个包含元信息的段落（频道、发布日期、视频链接） */
+.article-content > p:nth-child(2),
+.article-content > p:nth-child(3),
+.article-content > p:nth-child(4) {
   display: none;
 }
 
