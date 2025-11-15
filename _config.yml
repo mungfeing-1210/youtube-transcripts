@@ -35,6 +35,11 @@ kramdown:
   input: GFM
   hard_wrap: false
 
+# 包含所有子目录的 markdown 文件
+include:
+  - "_*"
+  - "**/*.md"
+
 # 默认值
 defaults:
   - scope:
@@ -43,3 +48,8 @@ defaults:
     values:
       layout: "default"
       comments: false
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "post"
