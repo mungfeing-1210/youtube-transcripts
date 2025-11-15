@@ -5,14 +5,6 @@ channel: "The Knowledge Project Podcast"
 date: 2025-11-11
 ---
 
-# Long-Term Greedy, Not Short-Term Stupid: The Playbook Behind Panera's 7.8 Billion Sale
-
-**频道**: The Knowledge Project Podcast
-**发布日期**: 2025-11-11
-**视频链接**: https://www.youtube.com/watch?v=h1fIVmf7uaw
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

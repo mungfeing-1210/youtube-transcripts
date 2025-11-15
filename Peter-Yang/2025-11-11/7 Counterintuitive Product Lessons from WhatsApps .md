@@ -5,14 +5,6 @@ channel: "Peter Yang"
 date: 2024-11-09
 ---
 
-# 7 Counterintuitive Product Lessons from WhatsApp's Former Head of Product | Ami Vora
-
-**频道**: Peter Yang
-**发布日期**: 2025-11-09
-**视频链接**: https://www.youtube.com/watch?v=Vp2BsJNVFqQ
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

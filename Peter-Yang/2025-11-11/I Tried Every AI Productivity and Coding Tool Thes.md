@@ -5,14 +5,6 @@ channel: "Peter Yang"
 date: 2025-11-05
 ---
 
-# I Tried Every AI Productivity and Coding Tool, These 7 Will Save You the Most Time (Nov 2025)
-
-**频道**: Peter Yang
-**发布日期**: 2025-11-05
-**视频链接**: https://www.youtube.com/watch?v=UKf6D42ME7Q
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

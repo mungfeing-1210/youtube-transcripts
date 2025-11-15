@@ -5,14 +5,6 @@ channel: "Dialectic Podcast with Jackson Dahl"
 date: 2024-11-05
 ---
 
-# Chris Sacca - Drifting Back to Real - Legendary Returns, Risk, Climate, Storytelling, Authenticity
-
-**频道**: Dialectic Podcast with Jackson Dahl
-**发布日期**: 2025-11-05
-**视频链接**: https://www.youtube.com/watch?v=acwhhgGGdX8
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

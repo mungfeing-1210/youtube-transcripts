@@ -5,14 +5,6 @@ channel: "Greg Isenberg"
 date: 2024-11-10
 ---
 
-# Glif AI: The $10 App That Replaces a Full Creative Team
-
-**频道**: Greg Isenberg
-**发布日期**: 2025-11-10
-**视频链接**: https://www.youtube.com/watch?v=w1OU6IdxF0Y
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

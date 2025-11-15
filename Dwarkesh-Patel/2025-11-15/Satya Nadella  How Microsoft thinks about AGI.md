@@ -5,14 +5,6 @@ channel: "Dwarkesh Patel"
 date: 2025-11-12
 ---
 
-# Satya Nadella – How Microsoft thinks about AGI
-
-**频道**: Dwarkesh Patel
-**发布日期**: 2025-11-12
-**视频链接**: https://www.youtube.com/watch?v=8-boBsWcr5A
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

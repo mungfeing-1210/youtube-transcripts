@@ -5,14 +5,6 @@ channel: "David Perell"
 date: 2025-11-12
 ---
 
-# How to Write Powerful Stories — Humans of New York
-
-**频道**: David Perell
-**发布日期**: 2025-11-12
-**视频链接**: https://www.youtube.com/watch?v=igWMCqAce4A
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

@@ -5,14 +5,6 @@ channel: "Y Combinator"
 date: 2025-11-14
 ---
 
-# AI Is Eating Logistics
-
-**频道**: Y Combinator
-**发布日期**: 2025-11-14
-**视频链接**: https://www.youtube.com/watch?v=KTmxaMdUbHA
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

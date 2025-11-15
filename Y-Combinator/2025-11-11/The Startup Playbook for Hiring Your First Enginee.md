@@ -5,14 +5,6 @@ channel: "Y Combinator"
 date: 2024-11-07
 ---
 
-# The Startup Playbook for Hiring Your First Engineers and AEs
-
-**频道**: Y Combinator
-**发布日期**: 2025-11-07
-**视频链接**: https://www.youtube.com/watch?v=i_PjjXKNpA4
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

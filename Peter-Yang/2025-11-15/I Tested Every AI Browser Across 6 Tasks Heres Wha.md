@@ -5,14 +5,6 @@ channel: "Peter Yang"
 date: 2025-11-12
 ---
 
-# I Tested Every AI Browser Across 6 Tasks: Here's What Actually Works (Nov 2025)
-
-**频道**: Peter Yang
-**发布日期**: 2025-11-12
-**视频链接**: https://www.youtube.com/watch?v=jAjqj5iiyfw
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

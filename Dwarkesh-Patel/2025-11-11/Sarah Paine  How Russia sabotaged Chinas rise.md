@@ -5,14 +5,6 @@ channel: "Dwarkesh Patel"
 date: 2024-10-31
 ---
 
-# Sarah Paine — How Russia sabotaged China's rise
-
-**频道**: Dwarkesh Patel
-**发布日期**: 2025-10-31
-**视频链接**: https://www.youtube.com/watch?v=RH_ycZYH8-s
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

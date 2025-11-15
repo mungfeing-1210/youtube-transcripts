@@ -5,14 +5,6 @@ channel: "The MAD Podcast with Matt Turck"
 date: 2024-11-06
 ---
 
-# Intelligence Isn’t Enough: Why Energy & Compute Decide the AGI Race – Eiso Kant
-
-**频道**: The MAD Podcast with Matt Turck
-**发布日期**: 2025-11-06
-**视频链接**: https://www.youtube.com/watch?v=6lmuo8RD-Rs
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

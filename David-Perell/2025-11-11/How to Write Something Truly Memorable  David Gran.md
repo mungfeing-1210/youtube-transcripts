@@ -5,14 +5,6 @@ channel: "David Perell"
 date: 2024-11-05
 ---
 
-# How to Write Something Truly Memorable — David Grann
-
-**频道**: David Perell
-**发布日期**: 2025-11-05
-**视频链接**: https://www.youtube.com/watch?v=ExjWLl2lrcA
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

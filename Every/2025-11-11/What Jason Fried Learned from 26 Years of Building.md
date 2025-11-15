@@ -5,14 +5,6 @@ channel: "Every"
 date: 2024-11-05
 ---
 
-# What Jason Fried Learned from 26 Years of Building Great Products
-
-**频道**: Every
-**发布日期**: 2025-11-05
-**视频链接**: https://www.youtube.com/watch?v=7SaxOv03TSI
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

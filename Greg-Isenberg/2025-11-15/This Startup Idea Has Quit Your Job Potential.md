@@ -5,14 +5,6 @@ channel: "Greg Isenberg"
 date: 2025-11-13
 ---
 
-# This Startup Idea Has “Quit Your Job” Potential
-
-**频道**: Greg Isenberg
-**发布日期**: 2025-11-13
-**视频链接**: https://www.youtube.com/watch?v=P2hjcIE9SQI
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

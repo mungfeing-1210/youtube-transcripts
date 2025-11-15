@@ -5,14 +5,6 @@ channel: "The MAD Podcast with Matt Turck"
 date: 2025-11-13
 ---
 
-# Can an AI Therapist Actually Help? (Slingshot AI CEO)
-
-**频道**: The MAD Podcast with Matt Turck
-**发布日期**: 2025-11-13
-**视频链接**: https://www.youtube.com/watch?v=3SliW74opyY
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

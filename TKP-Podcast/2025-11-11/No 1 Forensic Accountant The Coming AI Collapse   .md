@@ -5,14 +5,6 @@ channel: "The Knowledge Project Podcast"
 date: 2024-10-28
 ---
 
-# No. 1 Forensic Accountant: The Coming AI Collapse  | Anthony Scilipoti
-
-**频道**: The Knowledge Project Podcast
-**发布日期**: 2025-10-28
-**视频链接**: https://www.youtube.com/watch?v=E4wXp-DaW8g
-
----
-
 ## Key Takeaways
 
 ## 一句话总结

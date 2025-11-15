@@ -5,14 +5,6 @@ channel: "Lenny's Podcast"
 date: 2025-11-13
 ---
 
-# “Dumbest idea I’ve heard” to $100M ARR: Inside the rise of Gamma | Grant Lee (co-founder)
-
-**频道**: Lenny's Podcast
-**发布日期**: 2025-11-13
-**视频链接**: https://www.youtube.com/watch?v=3H0ngGU5pbM
-
----
-
 ## Key Takeaways
 
 ## 一句话总结
