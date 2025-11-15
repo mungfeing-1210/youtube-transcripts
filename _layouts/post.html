@@ -109,6 +109,19 @@ body {
   color: #1a1a1a;
 }
 
+/* 隐藏开头的分隔线 (可能是 YAML front matter 的 ---) */
+.article-content > hr:first-child {
+  display: none;
+}
+
+/* 隐藏紧跟在开头分隔线后的内容 */
+.article-content > hr:first-child + p,
+.article-content > hr:first-child + p + p,
+.article-content > hr:first-child + p + p + p,
+.article-content > hr:first-child + p + p + p + hr {
+  display: none;
+}
+
 .article-content h2 {
   font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
   font-size: 1.8rem;
