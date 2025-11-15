@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Can an AI Therapist Actually Help? (Slingshot AI CEO)"
 channel: "The MAD Podcast with Matt Turck"
 date: 2025-11-13

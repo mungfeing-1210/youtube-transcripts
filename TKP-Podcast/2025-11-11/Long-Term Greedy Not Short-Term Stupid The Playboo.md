@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Long-Term Greedy, Not Short-Term Stupid: The Playbook Behind Panera's 7.8 Billion Sale"
 channel: "The Knowledge Project Podcast"
 date: 2025-11-11

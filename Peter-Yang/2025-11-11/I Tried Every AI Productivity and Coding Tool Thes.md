@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "I Tried Every AI Productivity and Coding Tool, These 7 Will Save You the Most Time (Nov 2025)"
 channel: "Peter Yang"
 date: 2025-11-05

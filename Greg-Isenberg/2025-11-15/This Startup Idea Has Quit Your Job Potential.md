@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "This Startup Idea Has “Quit Your Job” Potential"
 channel: "Greg Isenberg"
 date: 2025-11-13

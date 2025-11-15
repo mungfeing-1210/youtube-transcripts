@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "How to Write Something Truly Memorable — David Grann"
 channel: "David Perell"
 date: 2024-11-05

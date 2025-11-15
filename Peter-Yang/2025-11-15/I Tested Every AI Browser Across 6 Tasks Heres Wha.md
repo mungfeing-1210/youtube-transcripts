@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "I Tested Every AI Browser Across 6 Tasks: Here's What Actually Works (Nov 2025)"
 channel: "Peter Yang"
 date: 2025-11-12

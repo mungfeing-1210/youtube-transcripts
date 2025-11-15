@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "AI Is Eating Logistics"
 channel: "Y Combinator"
 date: 2025-11-14

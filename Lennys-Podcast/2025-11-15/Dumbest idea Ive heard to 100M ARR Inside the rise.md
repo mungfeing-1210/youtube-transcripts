@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "“Dumbest idea I’ve heard” to $100M ARR: Inside the rise of Gamma | Grant Lee (co-founder)"
 channel: "Lenny's Podcast"
 date: 2025-11-13

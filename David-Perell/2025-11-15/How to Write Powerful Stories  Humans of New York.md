@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "How to Write Powerful Stories — Humans of New York"
 channel: "David Perell"
 date: 2025-11-12

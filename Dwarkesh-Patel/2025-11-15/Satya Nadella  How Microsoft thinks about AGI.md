@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Satya Nadella – How Microsoft thinks about AGI"
 channel: "Dwarkesh Patel"
 date: 2025-11-12

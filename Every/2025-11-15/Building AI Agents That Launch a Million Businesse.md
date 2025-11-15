@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Building AI Agents That Launch a Million Businesses"
 channel: "Every"
 date: 2025-11-12

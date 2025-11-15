@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "\"Sell the alpha, not the feature\": The enterprise sales playbook for $1M to $10M ARR | Jen Abel"
 channel: "Lenny's Podcast"
 date: 2024-11-09

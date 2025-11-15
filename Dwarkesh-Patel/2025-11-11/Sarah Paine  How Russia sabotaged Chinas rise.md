@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Sarah Paine — How Russia sabotaged China's rise"
 channel: "Dwarkesh Patel"
 date: 2024-10-31

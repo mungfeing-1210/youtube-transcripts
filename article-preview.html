@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Jason Fried Learned from 26 Years of Building Great Products</title>
+  <style>
+/* Every 风格文章页面 */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* 顶部导航 */
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 1.5rem 0;
+  background: white;
+}
+
+.header-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b6b6b;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #0a0a0a;
+}
+
+/* 文章容器 */
+.article-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+/* 文章头部 */
+.article-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.article-title {
+  font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #0a0a0a;
+  margin: 0 0 1.5rem 0;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #6b6b6b;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-channel {
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.meta-divider {
+  color: #d0d0d0;
+}
+
+.video-link {
+  color: #0a0a0a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.video-link:hover {
+  opacity: 0.7;
+}
+
+/* 文章内容 */
+.article-content {
+  color: #1a1a1a;
+}
+
+.article-content h2 {
+  font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.article-content h3 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #0a0a0a;
+  margin: 2rem 0 1rem 0;
+}
+
+.article-content h4 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2a2a2a;
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+.article-content p {
+  margin: 1.2rem 0;
+  line-height: 1.8;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 1.2rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin: 0.5rem 0;
+  line-height: 1.8;
+}
+
+.article-content strong {
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.article-content code {
+  background: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: "SF Mono", Monaco, monospace;
+}
+
+.article-content pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.article-content blockquote {
+  border-left: 3px solid #0a0a0a;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+.article-content hr {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 2.5rem 0;
+}
+
+/* 页脚 */
+.site-footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid #e8e8e8;
+  color: #9b9b9b;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #6b6b6b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  color: #0a0a0a;
+}
+
+.footer-divider {
+  margin: 0 0.8rem;
+  color: #d0d0d0;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .article-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .article-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .article-container {
+    padding: 2rem 1.5rem 3rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-wrapper">
+      <a href="preview.html" class="back-link">
+        ← 返回首页
+      </a>
+    </div>
+  </header>
+
+  <main class="article-container">
+    <article>
+      <header class="article-header">
+        <h1 class="article-title">What Jason Fried Learned from 26 Years of Building Great Products</h1>
+        <div class="article-meta">
+          <span class="meta-item">
+            <span class="meta-channel">Every</span>
+          </span>
+          <span class="meta-divider">·</span>
+          <span class="meta-item">
+            <time>2024 年 11 月 05 日</time>
+          </span>
+          <span class="meta-divider">·</span>
+          <span class="meta-item">
+            <a href="https://www.youtube.com/watch?v=7SaxOv03TSI" class="video-link" target="_blank">🎬 观看视频</a>
+          </span>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <h2>Key Takeaways</h2>
+
+        <h3>一句话总结</h3>
+        <p>Jason Fried 分享了 26 年产品构建的深刻洞察，强调了回归初心、关注"做东西"本身而非商业运作，并阐述了在非传统领域（如建筑、设计）中汲取灵感，以及如何用"自己"的方式在快速变化的时代中构建有灵魂的产品。</p>
+
+        <h3>内容概览</h3>
+        <p>本视频是 Jason Fried（37signals 的联合创始人）在播客中接受采访的内容。他深入探讨了自己从 26 年的创业经历中提炼出的核心价值观，尤其强调了对产品本身的纯粹热爱，而非对商业运作的迷恋。他将这种热爱与对建筑、汽车、手表等非软件领域的审美追求联系起来，并探讨了 Christopher Alexander 的"无意识设计"理念。此外，他还就 AI 技术的现状和未来进行了深入分析，并与主持人讨论了如何在这种变革时代保持"自我"并构建有影响力的产品。</p>
+
+        <h2>核心要点</h2>
+
+        <h3>1. 纯粹的产品创造者而非商业经营者</h3>
+        <p><strong>背景/问题</strong>: 许多创业者过度关注商业增长、融资和运营，而忽略了产品本身的魅力。</p>
+        <p><strong>核心观点</strong>: Jason Fried 认为自己更像是一个"产品制造者"，而非"企业经营者"。他发现，随着时间的推移，他对商业运作本身的兴趣逐渐减弱，而对创造出"美好、完整的单一概念"的产品则充满了热情。</p>
+        <p><strong>实践启示</strong>: 创业者应该审视自己的核心驱动力，并将其聚焦在最能带来满足感和价值的领域——通常是产品本身。认识到商业运作是服务于产品创造的工具，而不是目的。</p>
+
+        <h3>2. 从非软件领域汲取产品设计的灵感</h3>
+        <p><strong>背景/问题</strong>: 软件产品设计容易陷入同质化，缺乏触感和深度。</p>
+        <p><strong>核心观点</strong>: Jason Fried 从手表、汽车和建筑中获得了大量的产品设计灵感。他欣赏手表设计的"千篇一律中蕴含的万千变化"，汽车设计的"触感、人体工程学和细节"，以及建筑的"空间感、光影、材质和比例"。他认为这些非软件领域的设计思考，能够帮助他更好地在软件产品中创造类似的"感觉"和"正确性"。</p>
+        <p><strong>实践启示</strong>: 跨界学习和借鉴是提升产品设计的有效途径。观察和体验不同领域（如物理产品、艺术、建筑）的优秀设计，可以为软件产品的用户体验和美学带来新的视角和突破。</p>
+
+        <h3>3. "真诚的材料"与"内在感觉"的重要性</h3>
+        <p><strong>背景/问题</strong>: 现代建筑和设计有时流于表面，缺乏真实感和生命力。</p>
+        <p><strong>核心观点</strong>: Jason Fried 偏爱使用"诚实的材料"建造的建筑，并强调"现场感"（in-person feeling）的重要性。他认为很多现代建筑虽然在图片上好看，但在实际体验中却显得平淡，而一些老建筑或使用自然材料的建筑，反而能在现场带来更深刻的感受。这种对"感觉"的追求，也体现在他对产品设计的要求上。</p>
+
+        <h2>关键概念与资源</h2>
+        <p><strong>核心概念</strong>:</p>
+        <ul>
+          <li><strong>Product Maker vs. Business Operator</strong>: 强调对产品本身的纯粹热爱和关注。</li>
+          <li><strong>Spiritual Experience</strong>: 形容对优秀设计和空间带来的深刻感受。</li>
+          <li><strong>Tactileness, Ergonomics</strong>: 从汽车设计中引申出的对用户交互的触感和易用性关注。</li>
+          <li><strong>Honest Materials</strong>: 指代真实、不加修饰的材质，引申到产品设计中的真诚。</li>
+        </ul>
+
+        <p><strong>工具/技术</strong>:</p>
+        <ul>
+          <li>Vintage Hoyer watch (1974)</li>
+          <li>Rolex Submariner</li>
+          <li>FileMaker Pro</li>
+          <li>AI Tools (general)</li>
+          <li>ChatGPT</li>
+        </ul>
+
+        <p><strong>推荐资源</strong>:</p>
+        <ul>
+          <li>Christopher Alexander - <em>The Timeless Way of Building</em></li>
+          <li>Books of handmade/non-architect designed buildings (e.g., <em>Handmade Houses</em>)</li>
+          <li>John Lonergan (architect)</li>
+        </ul>
+
+        <hr>
+
+        <h2>目标受众</h2>
+        <p><strong>最适合</strong>: 产品经理、创业者、设计师、建筑师，以及对产品哲学、跨界设计思维和 AI 时代创新感兴趣的人群。</p>
+        <p><strong>次要受众</strong>: 对个人成长、职业发展和长期主义思维有兴趣的技术从业者和学习者。</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <a href="preview.html">首页</a>
+      <span class="footer-divider">|</span>
+      <a href="/feed.xml">RSS订阅</a>
+      <span class="footer-divider">|</span>
+      <span>Powered by <a href="https://deepmind.google/technologies/gemini/" target="_blank">Gemini 2.5</a> & <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></span>
+    </p>
+  </footer>
+</body>
+</html>

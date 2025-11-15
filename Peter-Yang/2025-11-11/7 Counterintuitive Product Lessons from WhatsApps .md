@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "7 Counterintuitive Product Lessons from WhatsApp's Former Head of Product | Ami Vora"
 channel: "Peter Yang"
 date: 2024-11-09

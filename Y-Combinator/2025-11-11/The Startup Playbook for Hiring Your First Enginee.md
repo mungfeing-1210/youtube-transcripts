@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Startup Playbook for Hiring Your First Engineers and AEs"
 channel: "Y Combinator"
 date: 2024-11-07

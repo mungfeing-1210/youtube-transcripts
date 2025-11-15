@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Intelligence Isn’t Enough: Why Energy & Compute Decide the AGI Race – Eiso Kant"
 channel: "The MAD Podcast with Matt Turck"
 date: 2024-11-06

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "What Jason Fried Learned from 26 Years of Building Great Products"
 channel: "Every"
 date: 2024-11-05
